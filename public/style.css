@@ -1,0 +1,106 @@
+body {
+  background-color: #232323;
+  color: white;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+#container {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.square {
+  width: 30%;
+  margin: 1.66%;
+  float: left;
+  background-color: purple;
+  padding-bottom: 30%;
+  border-radius: 10%;
+  transition: background 0.4s;
+  --webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+}
+
+.wrongSquare {
+  color: red;
+  opacity: 100%;
+  /*transition-delay: 2s;*/
+}
+
+#bar {
+  margin: 0;
+  text-align: center ;
+  height: 30px;
+  color: black;
+  background-color: white;
+  width: 100%;
+}
+
+#bar-container {
+  max-width: 400px;
+  margin: 0 auto;
+  /*Set height so that children can set their heights relative*/
+  height: 100%;
+  width: 100%;
+}
+
+#banner {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  float-left
+  width: 100%;
+  background-color: #128CE3;
+}
+
+.selected {
+  color: white;
+  background-color: #128CE3;
+}
+
+h1 {
+  /*reduce gap between lines*/
+  line-height: 1.1; 
+  /*get rid of space between banner*/
+  margin: 0;
+  font-weight: normal;
+}
+
+/*double the height of the h1*/
+#displayColor {
+  font-size: 200%;
+}
+
+button {
+  margin: 0;
+  border: none;
+  background: none;
+  /*Set height to 100% of containing element*/
+  height: 100%;
+  font-weight: 700;
+  color: #128CE3;
+  /*Space letters out a bit*/
+  letter-spacing: 1px;
+  /*inherit font-size from parent*/
+  font-size: inherit;
+  transition: all 0.2s;
+  --web-kit: transition: all 0.2s;
+
+  outline: none;
+
+}
+
+#message {
+  /*Pushes elements to the side*/
+  display: inline-block;
+  width: 20%;
+  color: red;
+  font-size: 80%;
+}
+
+button:hover {
+  color: white;
+  background-color: #128CE3;
+}
